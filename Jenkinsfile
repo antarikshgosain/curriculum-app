@@ -13,5 +13,13 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh '''pf -h
+free -m
+lsblk'''
+      }
+    }
+
   }
 }
