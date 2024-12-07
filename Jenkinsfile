@@ -13,9 +13,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('stats') {
       steps {
-        sh '''pf -h
+        sh '''df -h
 free -m
 lsblk'''
       }
